@@ -1,0 +1,115 @@
+.countries {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 48px;
+}
+
+.select-continent {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: rgba(116, 108, 108, 0.719);
+  border: none;
+  border-radius: 4px;
+  padding: 2px 8px;
+  width: auto;
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  z-index: 1;
+  outline: none;
+}
+
+.select-continent option {
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  background-color: rgb(80, 78, 78);
+}
+
+.search-filter {
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.search-filter::placeholder {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+ul.country-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+li.country {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(240, 234, 236, 0);
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255, 0.05);
+}
+
+li.country:active {
+  -webkit-tap-highlight-color: rgb(0, 0, 0);
+}
+
+.country-info-small {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  margin-top: auto;
+}
+
+.country-info-small span {
+  text-align: center;
+  width: 100%;
+}
+
+li.country img {
+  width: 30%;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+@media screen and (min-width: 425px) {
+  li.country {
+    width: 33.3333%;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  li.country {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  li.country {
+    width: 100%;
+  }
+}

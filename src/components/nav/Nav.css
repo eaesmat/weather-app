@@ -1,0 +1,155 @@
+.navBar {
+  width: 100%;
+  max-width: 768px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  align-self: center;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  padding: 0 10px;
+  background-color: rgb(2, 141, 95);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 30px;
+  height: 30px;
+}
+
+h1 {
+  margin-left: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px !important;
+  color: white;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.mobile-navUl {
+  display: none;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 12px;
+}
+
+.socials-link {
+  box-sizing: border-box;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: gray;
+  width: 36px;
+  height: 36px;
+}
+
+.navUl {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.nav-link {
+  margin: 0 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.9px;
+}
+
+@media screen and (max-width: 1024px) {
+  .navBar {
+    padding: 0 30px;
+  }
+
+  .nav-link {
+    font-size: 10px;
+    margin: 0 10px;
+  }
+
+  .navUl > li:last-of-type {
+    padding-left: 5px;
+  }
+
+  .navUl {
+    display: none;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    color: white;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  .logo-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .mobile-navUl {
+    display: flex;
+    width: 45%;
+    height: calc(100vh - 45px);
+    flex-direction: column;
+    align-items: center;
+    gap: calc(100vh - 240px);
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: rgb(90, 43, 72, 0.8);
+    padding: 40px 0;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-link.mobile {
+    color: #fff;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mobile-navUl {
+    width: 50%;
+  }
+
+  .nav-link.mobile {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .navBar {
+    height: 45px;
+  }
+
+  .mobile-navUl {
+    width: 40%;
+  }
+
+  .nav-link.mobile {
+    font-size: 11px;
+  }
+}
