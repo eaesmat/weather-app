@@ -18,7 +18,11 @@
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://elaborate-custard-4c7afb.netlify.app/continents)
+
+## Video Demo
+
+[Video Demo Link](https://www.loom.com/share/1ac26e390b754ba4943ca7718b816d5b)
 
 
 ## Getting Started
