@@ -1,0 +1,98 @@
+.country-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+  font-weight: 500;
+  color: white;
+}
+
+.return {
+  width: 100%;
+  padding: 0 8px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 150%;
+}
+
+.continent-btn {
+  box-sizing: border-box;
+  padding: 4px;
+  border-radius: 3px;
+  background-color: rgb(139, 0, 0, 0.4);
+}
+
+.country-path {
+  width: auto;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 8px;
+  align-items: center;
+}
+
+.datetime {
+  font-size: 10px;
+}
+
+.country-flag {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.pollution-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+span.status {
+  box-sizing: border-box;
+  padding: 4px;
+  border-radius: 8px;
+  background-color: #000a;
+  font-weight: 900;
+}
+
+.compounds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.compound {
+  width: 48.43%;
+  box-sizing: border-box;
+  padding: 3%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(231, 47, 47, 0);
+  border-radius: 8px;
+  border: 1px solid rgba(212, 20, 20, 0.2);
+}
+
+.compound span {
+  font-weight: 600;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.compound:nth-child(4n-3) {
+  background-color: rgba(241, 237, 237, 0.5);
+}
+
+.compound:nth-child(4n+4) {
+  background-color: rgb(230, 88, 84, 0.5);
+}
